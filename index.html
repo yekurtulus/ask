@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SON - Aşkın Romanı</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Open+Sans&display=swap" rel="stylesheet"/>
+  <style>
+    .birthday-box {
+      max-width: 800px;
+      margin: 40px auto 0;
+      background-color: rgba(255, 255, 255, 0.15);
+      border: 2px solid #FFD1DC;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      position: relative;
+    }
+
+    .birthday-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #FFE4E1;
+    }
+
+    .birthday-box p {
+      font-size: 18px;
+      color: #fff8f8;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .heart {
+      font-size: 30px;
+      color: #FFB6C1;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom, #8B0000, #FF6347);
+      color: #fff;
+      text-align: center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 70px;
+      margin: 0;
+      letter-spacing: 4px;
+      color: #FFE4E1;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #FFDAB9;
+      font-style: italic;
+    }
+
+    .video-section, .photo-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 3px solid #FFD1DC;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #fff5f5;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      font-style: italic;
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 3px solid #FFD1DC;
+    }
+
+    .photo p {
+      font-size: 16px;
+      margin-top: 12px;
+      color: #fff5f5;
+      font-style: italic;
+    }
+
+    .heart-fall {
+      position: fixed;
+      top: -50px;
+      animation: fall 4s linear infinite;
+      font-size: 24px;
+      color: #FFB6C1;
+      opacity: 0.7;
+      z-index: 0;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) translateX(0); }
+      100% { transform: translateY(120vh) translateX(40px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="birthday-box">
+    <div class="heart">❤️</div>
+    <h2>İyi ki doğdun güzel bebeğim</h2>
+    <p>
+      Seni çok seviyorum güzelim. İyi ki hayatıma girdin, iyi ki varsın. Neredeyse 1.5 yıldır birlikteyiz ve bu geçirdiğimiz 1.5 yılda her gün seni düşünerek, seni isteyerek geçirdim. 
+	Her anımızdan iyi ki dedim. İyi ki girmişsin hayatıma da beni sevmişsin. Yeni bir yaşında yine senin yanında olmak beni çok mutlu ediyor. Bundan sonraki tüm doğum günlerinde hep yanında olmak, mutlu, sağlıklı ve huzurlu olmak istiyorum güzelim.
+	Sende umarım hep beni istersin hayat arkadaşım.
+    </p>
+  </div>
+
+  <header>
+    <h1>SON</h1>
+    <div class="subtitle">İlk başta senin tahminini izleyelim güzelim</div>
+  </header>
+
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/AGRZQAgA_0A" allowfullscreen></iframe>
+    <p>Tabii ki de tahminin tutmadı...</p>
+	<p>Ben bu hediyeye karar verdikten sonra senle birkaç kez bunun hakkında fikir aldım. İlk önce onlara bakalım istersen.</p>
+  </section>
+
+  <section class="photo-section">
+    <div class="gallery">
+      <div class="photo">
+        <img src="images/foto1.jpeg" alt="Yazı masası" />
+        <p>Fiyatlar yüksek olunca bende dedim ki...</p>
+      </div>
+      <div class="photo">
+        <img src="images/foto2.jpeg" alt="Not defteri" />
+        <p>İzlediğimiz dizide şans eseri adam da böyle bir şey yapıyormuş.</p>
+      </div>
+      <div class="photo">
+        <img src="images/foto3.jpeg" alt="Kalem ve kahve" />
+        <p>Ama ben bunu görmeden önce başlamıştım.</p>
+      </div>
+    </div>
+  </section>
+
+<p>Ufak ufak tahminler yaptığını ya da anladığını düşünüyorum ve şuan yüzünde oluşan 
+o ifadeyi çok merak ediyorum. Burada şimdilik duralım ve hediyeyi açmaya geçelim güzelim.</p>
+  <section class="photo-section">
+    <div class="gallery">
+      <div class="photo">
+        <img src="images/foto6.jpeg" alt="Yazı masası" />
+        <p>Kapak bir yerden tanıdık gelebilir.</p>
+      </div>
+      <div class="photo">
+        <img src="images/foto5.jpeg" alt="Not defteri" />
+        <p>Tepkilerin de çok iyi yanlız</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/ufbtStkMdUg" allowfullscreen></iframe>
+  <p>Bu video da ses çok kötü olmuş aslında koymayacaktım ama olsun, o an kontrol etmeyi unutmuşum arkada da müzik sesi var.
+  Müziği bir şekilde kaldırmaya çalıştım ama pekte bir şey değişmedi.</p>  </section>
+
+  <section class="photo-section">
+    <div class="gallery">
+      <div class="photo">
+        <img src="images/foto4.jpeg" alt="Kapak tasarımı" />
+<p>Okuduğun kitaplar, romanlar hakkında senden bilgi almıştım ama zaten ben önceden de öyle yazmaya başlamıştım. Romanımız da ilk başlangıç başka zaman diliminden, diğer bölüm başka zaman dilimi bir ileri bir geri gidiyor. 
+Ve şöyle bir şey de var okudukça fark edeceksin ki bazı bölümler benim ağzımdan bazı bölümler senin ağzından yazılmış şekilde.</p>     
+ </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/39ME5RzUdg8" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/g455_YsidWI" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Ml8CIYx31dM" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/byrfpBZMp6I" allowfullscreen></iframe>
+    <p>Burada da ekran kaydı aldığım yer.</p>
+  </section>
+
+<p> Bazı kısımları yazarken gerçekten çok zorlandım, ağladığım, gülümsemekten yüzümün ağrıdığı yerler oldu. 
+Ama bir şekilde tamamladım diye düşünüyorum. Okuduğun zaman daha çok fazla detay hatırlayacaksın "aaaa bunu konuşmuştuk." gibi. Her detayı hatırladığında bana gelip anlatmanı çok istiyorum. 
+Kesinlikle bir yazar değilim evet bunu biliyorum ve eleştiriye fazlasıyla açığım. Belki bir daha yazarız hanımefendi. Seni çok seviyorum güzelim.
+
+</p>
+  <script>
+    for(let i = 0; i < 100; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart-fall';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (6 + Math.random() * 3) + 's';
+      heart.style.fontSize = (16 + Math.random() * 30) + 'px';
+      heart.innerText = '💖';
+      document.body.appendChild(heart);
+    }
+  </script>
+</body>
+</html>
